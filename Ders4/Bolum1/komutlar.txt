@@ -1,0 +1,3 @@
+Go da diğer dillerden farklı olarak while do while
+döngüleri bulunmamaktadır.
+bütün döngüler for ile yapılmaktadır.

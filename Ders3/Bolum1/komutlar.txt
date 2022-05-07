@@ -1,0 +1,7 @@
+==  Equal to                    num == 0
+!=  Not equal to                num != 0
+<   Less than                   num < 0
+<=  Less than or equal to       num <= 0
+>   Greater than                num > 0
+>=  Greater than or equal to    num >= 0
+

@@ -1,0 +1,30 @@
+ilk olarak go projesi oluşturmak için alttaki komut yazılır
+------------------------------------------------------------
+go mod init  mck.com/goLandDersleri
+
+Komut yazıldıktan sonra klasörde go.mod adında bir dosyanın oluştuüunu görürüz
+bu dosya içerisinde proje ile ilgili olarak bilgiler yer almakta.
+
+
+İlk dosyayı oluşturmak için  touch komutu ile main.go yazılır.
+---------------------------------
+touch main.go
+
+
+Projenin derlenmesi için aşağıdaki komutu yazıyoruz.
+----------------------------------------------------
+
+go build main.go
+
+Çalıştırmak için derlenen projeyi aşağıdaki komut ile çalıştırıyoruz.
+ ------------------------------------------------------
+ ./main
+
+Build etmeden çalıştırmak için aşağıdaki komutu kullanıyoruz.
+------------------------------------------------------
+go run main.go
+
+
+
+
+

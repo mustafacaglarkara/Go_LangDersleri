@@ -1,0 +1,11 @@
+fmt.Printf() => formatlama için kullanılır.
+
+fmt.Println() => Yazdırmak için
+
+reflect.TypeOf(degiskenAdi)
+---------------------------------
+Özellikle interface'lerde veri tipini öğrenmede kullanulır.
+reflect.TypeOf(start)
+
+
+strconv.Atoi ile stringden int veri çevrilir.

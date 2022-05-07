@@ -1,0 +1,6 @@
+Go da kullanılmayan değişkenler derleme aşamasında
+hata verir. bu sebepten dolayı kullanılmayan değişkenleri silmek
+ya da aşağıdaki gibi yapmak gerekmekte.
+---------------------------------------------
+var isim string
+ _ = isim

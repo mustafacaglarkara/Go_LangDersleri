@@ -1,0 +1,11 @@
+Windows için derleme komutları
+----------------------------------
+GOOS=windows GOARCH=amd64 go build -o Chapter_1-windows.exe
+
+Mac İçin Derleme Komutları
+--------------------------------
+GOOS=darwin GOARCH=amd64 go build -o Chapter_1-mac
+
+Linux İçin Derleme Komutları
+----------------------------------------------------
+GOOS=linux GOARCH=amd64 go build -o Chapter_1-linux
