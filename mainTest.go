@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 type Insan struct {
 	Isim    string
@@ -20,6 +23,7 @@ func main() {
 	i.IsımYaz()
 	i.IsımEkle("Ülkü")
 	i.IsımYaz()
+	fmt.Println(strings.Title("deneme"))
 	//isimler := []string{"Mustafa", "Çağlar"}
 	//
 	//isimler = append(isimler, "Ülkü", "Öykü")
