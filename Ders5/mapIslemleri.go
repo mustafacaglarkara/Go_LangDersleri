@@ -23,4 +23,13 @@ func main() {
 	} else {
 		fmt.Println("Kayıt Bulunamadı")
 	}
+	fmt.Println(mapIcindekiVeriBul("Samsun"))
+}
+
+func mapIcindekiVeriBul(veri string) bool {
+	if _, durum := sehirler[veri]; durum {
+		return true
+	} else {
+		return false
+	}
 }
