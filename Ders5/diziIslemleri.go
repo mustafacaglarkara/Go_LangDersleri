@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+var denemeBosDizi [3]int //boş olarak dizi tanımla
 var sinavlar = [4]int{
 	5,
 	3,

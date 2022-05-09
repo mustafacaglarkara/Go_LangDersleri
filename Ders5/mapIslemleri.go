@@ -26,10 +26,11 @@ func main() {
 	fmt.Println(mapIcindekiVeriBul("Samsun"))
 }
 
+// map içinde veri arayan fonksion
 func mapIcindekiVeriBul(veri string) bool {
 	if _, durum := sehirler[veri]; durum {
-		return true
+		return durum
 	} else {
-		return false
+		return durum
 	}
 }
