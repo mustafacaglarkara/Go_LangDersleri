@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// for looplar aşağıdaki gibi tanımlanır.
 	//for i := 0; i < 100; i++ {
@@ -11,4 +13,10 @@ func main() {
 		println(b)
 		a, b = b, a+b
 	}
+
+	slc_1 := []int{1, 2, 3}
+	for i := range [10]int{} {
+		slc_1 = append(slc_1, i)
+	}
+	fmt.Println(slc_1)
 }

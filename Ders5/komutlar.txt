@@ -1,0 +1,22 @@
+Array ile Slice farkı
+----------------------
+Slice lar büyüyebilir. Arrayler boyutludur limitlidir.
+
+
+Slice ile arama
+------------------------
+
+slc_2 :=mmake([]int,0,3) // 3 burda kapasitedir.
+
+slc_2[0] = 2   //burası hata verecektir. out of range hatası
+
+slc_2 = append(slc_2,1)   //append komutu ile slice a veri atanabilir.
+//append ile veri eklendikce kapazite katı kadar boyutu artar.
+
+
+
+// map işlemleri
+
+Sıralama garantisi yoktur.
+
+
