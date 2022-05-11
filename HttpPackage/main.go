@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+
 	app := fiber.New()
 
 	app.Get("/", func(ctx *fiber.Ctx) error {
