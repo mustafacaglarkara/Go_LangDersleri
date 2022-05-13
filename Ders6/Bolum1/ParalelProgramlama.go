@@ -18,4 +18,5 @@ func main() {
 	runtime.GOMAXPROCS(8)
 	go Selam("World")
 	Selam("Mustafa")
+	fmt.Println("Goroutines\t", runtime.NumGoroutine())
 }
