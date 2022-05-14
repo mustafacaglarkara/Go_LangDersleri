@@ -19,4 +19,7 @@ func main() {
 	fmt.Println("Bugün ", yarin.Format(longformat))
 	shortFormat := "1/2/2006"
 	fmt.Println("Bugün : ", yarin.Format(shortFormat))
+
+	eskiTarih := time.Date(1983, time.July, 10, 0, 0, 0, 0, time.UTC)
+	fmt.Println(eskiTarih.Weekday())
 }
