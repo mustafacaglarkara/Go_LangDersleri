@@ -23,7 +23,7 @@ func ortalamaHesapla(exam []int) {
 }
 
 func main() {
-	// arrat to slice yapılması gerekli
+	// array to slice yapılması gerekli
 	var gecis = sinavlar[:]
 	ortalamaHesapla(gecis)
 }

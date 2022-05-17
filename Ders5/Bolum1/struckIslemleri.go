@@ -8,6 +8,14 @@ type Human struct {
 	Age       int
 }
 
+// struck fonksiyon tanımlama
+func (h Human) save() {
+	fmt.Println("Kayıt Edildi", h.FirstName)
+}
+func (h Human) update() {
+	fmt.Println("Kayıt Güncellendi", h.FirstName)
+}
+
 // Contructer işlemi Varsayılan ve Boş Yapımı Metod
 func NewHuman() *Human {
 	h := new(Human)

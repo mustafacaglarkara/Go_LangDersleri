@@ -24,6 +24,8 @@ func main() {
 		fmt.Println("Kayıt Bulunamadı")
 	}
 	fmt.Println(mapIcindekiVeriBul("Samsun"))
+	deger, varMi := sehirler["Samsun"]
+	fmt.Println(deger, varMi)
 }
 
 // map içinde veri arayan fonksion
