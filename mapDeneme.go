@@ -25,4 +25,5 @@ func main() {
 
 	jsonVeri, _ := json.MarshalIndent(sozluk, "", " ")
 	fmt.Println(string(jsonVeri))
+
 }
