@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Bilgisayar"
+    },
+    {
+      "id": 2,
+      "categoryName": "Gıda"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "productName": "Lenovo",
+      "categoryId": 1,
+      "unitPrice": 18.5
+    },
+    {
+      "id": 2,
+      "productName": "Lenovo",
+      "categoryId": 1,
+      "unitPrice": 18.5
+    },
+    {
+      "id": 3,
+      "productName": "Mac Pro",
+      "categoryId": 1,
+      "unitPrice": 34000
+    }
+  ]
+}
