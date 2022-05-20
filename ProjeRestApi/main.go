@@ -46,7 +46,7 @@ func GetAllProducts() ([]Entity.Product, error) {
 	//fmt.Println(productList)
 	return productList, nil
 }
-func AddProduct() {
+func AddProduct() (Entity.Product, error) {
 	//Url adresi girilir
 	var urlAdres = "http://localhost:3000/products"
 	// gönderilecek olan veri set edilir.
@@ -54,12 +54,12 @@ func AddProduct() {
 	// struct to json
 	jsonProduct, err := json.Marshal(product)
 	if err != nil {
-		fmt.Println(err)
+		return Entity.Product{}, err
 	}
 	// Http post işlemi
 	response, errResponse := http.Post(urlAdres, "application/json;charset=utf-8", bytes.NewBuffer(jsonProduct))
 	if errResponse != nil {
-		fmt.Println(errResponse)
+		return Entity.Product{}, nil
 	}
 	// bağlantıyı sonlarıracak olan func
 	defer response.Body.Close()
@@ -71,5 +71,6 @@ func AddProduct() {
 	//todo struct çevirme
 	var productResponse Entity.Product
 	json.Unmarshal(bodyByte, &productResponse)
-	fmt.Println("Kayıt Edildi", productResponse.ProductName)
+	//fmt.Println("Kayıt Edildi", productResponse.ProductName)
+	return productResponse, nil
 }
