@@ -9,6 +9,7 @@ func main() {
 	myArray[1] = 23
 	myArray[2] = 54
 	fmt.Println(myArray)
+	fmt.Printf("%#v \n ", myArray) // çıktı olarak [3]int{32,23,54} gelir
 
 	// Renk Dizisi
 	color := [3]string{}

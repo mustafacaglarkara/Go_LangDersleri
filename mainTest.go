@@ -17,6 +17,7 @@ func (insan Insan) IsımYaz() {
 func (insan *Insan) IsımEkle(yeniIsim string) {
 	insan.Isim = yeniIsim
 }
+
 func main() {
 
 	i := Insan{Isim: "Mustafa Çağlar", Soyisim: "KARA", Yas: 38}
@@ -24,6 +25,12 @@ func main() {
 	i.IsımEkle("Ülkü")
 	i.IsımYaz()
 	fmt.Println(strings.Title("deneme"))
+
+	var sayilar = [2][3]int{
+		{1, 2, 3}, {9, 8, 7},
+	}
+	fmt.Println(sayilar)
+
 	//isimler := []string{"Mustafa", "Çağlar"}
 	//
 	//isimler = append(isimler, "Ülkü", "Öykü")

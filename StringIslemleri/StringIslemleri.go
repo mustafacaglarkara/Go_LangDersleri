@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"strings"
+	"unicode"
 )
 
 func main() {
@@ -26,6 +27,7 @@ func main() {
 	// Replace ile karakter değiştirmek
 	// -1 olur ise tüm karakterleri değiştirir
 	fmt.Println(strings.Replace(isim, "a", "A", 1))
+	fmt.Println(strings.Replace(isim, "a", "A", -1)) //-1 olursa tümünü değiştirir
 
 	// Split ile metin parçalama
 	hesap_no := "2022/05/18/17/24"
@@ -34,4 +36,8 @@ func main() {
 
 	// Repeat ile tekrarlama
 	fmt.Println(strings.Repeat(isim, 10))
+	// türkçe karakterler için
+	tr := unicode.TurkishCase
+	metin := strings.ToLowerSpecial(tr, "ADIM MUSTAFA ÇAĞLAR KARA GİRESUNDA YAŞIYORUM")
+	println(metin)
 }

@@ -9,6 +9,11 @@ func main() {
 	var myString = "1"
 	var x = 10
 	var f float32 = 2.0
+	var s1 = "3.123"
+
+	// String datayı float a çevirme
+	f1, _ := strconv.ParseFloat(s1, 64)
+	fmt.Println(f1)
 
 	fmt.Println(myString, x, f)
 
